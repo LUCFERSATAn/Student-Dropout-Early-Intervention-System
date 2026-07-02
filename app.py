@@ -66,11 +66,11 @@ except Exception as e:
         """
         )
         st.write("Model Accuracy: 92%")
-with 
+with: 
        st.expander("About the Predictions & Responsible Use"):
        st.write("Interpretability: This tool provides risk scores based on historical data patterns.")
        st.write("Responsible Use: Predictions should be used to inform support strategies, not for automated punitive actions.")
-with
+with:
      st.expander("About the Predictions & Responsible Use"):
      st.write("Limitations: This model is based on historical data and may not account for unforeseen personal or external factors affecting student performance.")
      st.write("Fallback Responses: If the system encounters an error during data processing, a default user-friendly message will be displayed to notify the user.")
