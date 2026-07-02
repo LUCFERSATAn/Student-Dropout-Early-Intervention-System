@@ -30,7 +30,7 @@ if st.sidebar.button("Analyze Student Risk"):
     input_data[2] = sem2_approved 
 try:
     # Your model prediction pipeline here
-       input_df = pd.DataFrame([input_data])
+    input_df = pd.DataFrame([input_data])
     probabilities = model.predict_proba(input_df)[0]
     dropout_risk = probabilities[1] * 100
 except Exception as e:
