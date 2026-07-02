@@ -22,7 +22,7 @@ total_units = sem1_approved + sem2_approved
 if total_units > 40:
     st.error("Total approved units exceed the maximum allowed limit.")
 tuition_num = 1 if tuition == "Yes" else 0
-
+dropout_risk = None
 if st.sidebar.button("Analyze Student Risk"):
     input_data = np.zeros(34)
     input_data[0] = tuition_num
