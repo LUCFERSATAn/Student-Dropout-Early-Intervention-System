@@ -36,7 +36,7 @@ try:
 except Exception as e:
     st.error("Model unavailable. Please check the inputs or contact support.")
 
-     st.subheader("Analysis Results")
+    st.subheader("Analysis Results")
     st.subheader("📊 Analysis Results")
 
     if dropout_risk >= 75:
