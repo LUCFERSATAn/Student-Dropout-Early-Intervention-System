@@ -27,8 +27,8 @@ if st.sidebar.button("Analyze Student Risk"):
     input_data = np.zeros(34)
     input_data[0] = tuition_num
     input_data[1] = sem1_approved
-    input_data[2] = sem2_approved
-  try:
+    input_data[2] = sem2_approved 
+try:
     # Your model prediction pipeline here
        input_df = pd.DataFrame([input_data])
     probabilities = model.predict_proba(input_df)[0]
