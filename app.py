@@ -28,14 +28,15 @@ if st.sidebar.button("Analyze Student Risk"):
     input_data[0] = tuition_num
     input_data[1] = sem1_approved
     input_data[2] = sem2_approved 
+dropout_risk = None
 try:
-    # Your model prediction pipeline here
     input_df = pd.DataFrame([input_data])
     probabilities = model.predict_proba(input_df)[0]
     dropout_risk = probabilities[1] * 100
 except Exception as e:
     st.error("Model unavailable. Please check the inputs or contact support.")
 
+st.subheader("Analysis Results")
     st.subheader("📊 Analysis Results")
 
     if dropout_risk >= 75:
